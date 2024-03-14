@@ -1,0 +1,175 @@
+/* Estilos para la navegación */
+* {
+    margin: 0;
+}
+
+/* Estilos para la navegación */
+.navegacion {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #ddd;
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    animation: aparecer 2s ease;
+}
+
+/* Estilos para la tarjeta de presentación */
+.card {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.imagen-perfil {
+    width: 100%;
+    height: auto;
+}
+
+.nombre {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Estilos para las listas de habilidades */
+/* Estilos para las listas de habilidades */
+.habilidades-tecnicas,
+.habilidades-blandas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.habilidades-tecnicas li,
+.habilidades-blandas li {
+    flex: 1 0 200px;
+    /* Esto hace que los elementos sean flexibles y tengan un ancho mínimo de 200px */
+    margin: 10px;
+    list-style-type: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la imagen entre el formulario y el card de presentación */
+.imagen-entre {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.campo {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.campo:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #666;
+}
+
+/* Estilos para el grid de proyectos */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.proyecto {
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

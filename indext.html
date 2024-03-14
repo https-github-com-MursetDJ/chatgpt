@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi Página de Presentación</title>
+    <!-- Aquí puedes incluir tu archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca-de">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1 class="titulo">Bienvenido a mi página de presentación</h1>
+    </section>
+
+    <section id="acerca-de">
+        <div class="card">
+            <img src="img/perfil.webp" alt="Imagen de perfil de Dennis" class="imagen-perfil">
+            <h2 class="nombre">Dennis</h2>
+            <p class="descripcion">Ingeniero de Sistemas graduado de la Universidad Nacional de Cajamarca. Actualmente
+                vive en Cajamarca.</p>
+        </div>
+
+        <h2>Habilidades Técnicas</h2>
+        <ul class="habilidades-tecnicas">
+            <li>Programación en múltiples lenguajes (Java, Python, JavaScript, etc.)</li>
+            <li>Desarrollo de aplicaciones web (front-end y back-end)</li>
+            <li>Manejo de bases de datos (SQL y NoSQL)</li>
+            <li>Conocimientos de DevOps y CI/CD</li>
+            <li>Experiencia con pruebas unitarias y de integración</li>
+        </ul>
+
+        <h2>Habilidades Blandas</h2>
+        <ul class="habilidades-blandas">
+            <li>Excelentes habilidades de comunicación</li>
+            <li>Capacidad para trabajar en equipo</li>
+            <li>Resolución de problemas y pensamiento crítico</li>
+            <li>Capacidad para aprender rápidamente</li>
+            <li>Manejo del tiempo y organización</li>
+        </ul>
+    </section>
+
+    <img src="img/imagen-entre.jpg" alt="Imagen entre el formulario y el card de presentación" class="imagen-entre">
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+            <div class="proyecto">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del Proyecto 1.</p>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del Proyecto 2.</p>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del Proyecto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <form class="formulario">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" class="campo"><br>
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo" class="campo"><br>
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </section>
+
+    <!-- Aquí incluyes tu archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
